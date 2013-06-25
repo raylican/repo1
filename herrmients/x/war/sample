@@ -1,0 +1,90 @@
+sample
+submitHandler: function(form) {
+					var data = $(form).serialize();
+					$.post(    
+         		   	'../contacto.php', data, function(data) {alert("Hi");}
+          	      );	
+				}
+
+
+
+				{
+          	     	alert((data=='sucesso') ? 'Adicionado com sucesso!' : data);
+          	      	top.location.reload();
+          	      }
+
+
+$('#contactForm').each (function(){this.reset();}
+
+
+ $.ajax({
+type: "POST",
+url: url,
+data: data,
+success: success,
+dataType: dataType
+});
+
+
+
+{
+			messages: {
+				nome: "Escriba su nombre",
+				email: {
+					required: "Escriba su Email",
+					email: "Inserte una dirección de Email válida"
+				},
+				telefono: "Escriba su teléfono",
+				cf: "Escriba su NIF o CIF",
+				questione: "Describa la cuestión sobre la qué desea formular su consulta",
+				privacy: "Marque consentimiento para privacidad"
+			}
+		}
+
+
+
+
+		<li>
+					<label for="nome">Nombre y apellidos:</label>
+					<input type="text" id="nome" name="nome" class="required" placeholder="Escriba aquí su nombre completo">
+				</li>
+				<li>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" class="required" placeholder="Escriba aquí su dirección de correo electrónico">
+				</li>
+				<li>
+					<label for="telefono">Teléfono:</label>
+					<input type="text" id="telefono" name="telefono" class="required" placeholder="Escriba aquí su número de teléfono">
+				</li>
+				<li>
+					<label for="cf">NIF ó CIF:</label>
+					<input type="text" id="cf" name="cf" class="required" placeholder="Escriba aquí su NIF o CIF">
+				</li> 
+
+
+function doConfirm(responseText, statusText, xhr, $form)  { 
+    // for normal html responses, the first argument to the success callback 
+    // is the XMLHttpRequest object's responseText property 
+ 
+    // if the ajaxForm method was passed an Options Object with the dataType 
+    // property set to 'xml' then the first argument to the success callback 
+    // is the XMLHttpRequest object's responseXML property 
+ 
+    // if the ajaxForm method was passed an Options Object with the dataType 
+    // property set to 'json' then the first argument to the success callback 
+    // is the json data object returned by the server 
+ if(2<5){alert('status: ' + statusText + '\n\nresponseText: \n' + responseText + 
+        '\n\nThe output div should have already been updated with the responseText.'); };
+ return true; 
+/*$('#contact_form').html("<div id='message'></div>");
+        $('#message').html("<h2>¡Su consulta ha sido recibida!</h2>")
+        .append("<p>En breve rebirá una respuesta.</p>")
+        .hide()
+        .fadeIn(1500, function() {
+          $('#message').append("<img id='checkmark' src='../check.png' />");
+        });*/
+
+
+
+} 
+
